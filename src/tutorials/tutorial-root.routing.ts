@@ -5,6 +5,7 @@ import { ServerRootComponent } from "./server/server-root.component";
 import { ClientRootComponent } from "./client/client-root.component";
 import { TutorialRootComponent } from "./tutorial-root.component";
 import { RoutingData } from "../routing/routing.data";
+import { CustomRoutes } from "../routing/routing";
 
 
 export const routingComponents: any[] = [
@@ -17,11 +18,11 @@ export const TUTORIAL_BASE_PATH = "tutorial";
 
 export const routingProviders: any[] = [];
 
-const routes: Routes = [
+const routes: CustomRoutes = [
 	{
 		path: TUTORIAL_BASE_PATH,
 		component: TutorialRootComponent,
-		data: <RoutingData>{ title: "Start dis" },
+		data: {title: ""},
 		children: [
 			{
 				path: "server",
