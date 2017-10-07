@@ -9,7 +9,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",    
+    "e2e": "ng e2e",
     "watch:build": "webpack --config webpack.config.js --watch",
     "watch:server": "nodemon dist_server/server.js"
   },
@@ -28,7 +28,7 @@
     "core-js": "^2.4.1",
     "express": "^4.16.1",
     "nodemon": "^1.12.1",
-    "rxjs": "^5.4.2",
+    "rxjs": "^5.4.3",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

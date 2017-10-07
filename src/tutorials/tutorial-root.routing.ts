@@ -22,17 +22,17 @@ const routes: CustomRoutes = [
 	{
 		path: TUTORIAL_BASE_PATH,
 		component: TutorialRootComponent,
-		data: {title: ""},
+		data: {title: "tutorial"},
 		children: [
 			{
 				path: "server",
 				component: ServerRootComponent,
-				data: { title: "PAGES_TITLE_LABEL" }
+				data: { title: "server" }
 			},
 			{
 				path: "client",
 				component: ClientRootComponent,
-				data: { title: "PAGES_TITLE_LABEL" }
+				data: { title: "client" }
 			}
 		]
 	}
